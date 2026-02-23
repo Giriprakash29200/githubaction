@@ -36,9 +36,6 @@ jobs:
       - name: Run Unit Tests
         run: mvn test
 
-      - name: Generate Coverage Report
-        run: mvn jacoco:report
-
       - name: Upload Coverage Artifact
         uses: actions/upload-artifact@v4
         with:
